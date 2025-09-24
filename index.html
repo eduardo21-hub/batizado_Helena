@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Batizado da Helena</title>
+
+  <!-- Fonte para o título -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Overlay da porta -->
+  <div class="porta-container" id="porta">
+    <div class="porta esquerda" aria-hidden="true">
+      <img src="https://files.idyllic.app/files/static/233675?width=1280&optimizer=image" alt="Porta">
+    </div>
+    <div class="porta direita" aria-hidden="true">
+      <img src="https://files.idyllic.app/files/static/233675?width=1280&optimizer=image" alt="Porta">
+    </div>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <main class="conteudo-site" id="conteudo">
+    <h1 class="titulo">Batizado da Helena 🌹</h1>
+
+    <div class="foto-container">
+      <img src="images/foto-helena.jpg" alt="Helena" class="photo">
+    </div>
+
+    <p class="subtexto">Você é nosso convidado especial!</p>
+    <p class="details">🗓 04/10/2025 • ⛪ Paróquia São Luís Gonzaga • 🕥 10:30</p>
+
+    <section class="rsvp">
+      <h2>Confirme sua presença</h2>
+      <form id="rsvpForm">
+        <input type="text" name="nome" placeholder="Seu nome completo" required>
+        <select name="presenca" required>
+          <option value="">Vai comparecer?</option>
+          <option value="Batizado_Almoco">No Batizado & Almoço</option>
+          <option value="So_Batizado">Só no Batizado</option>
+          <option value="Nenhum">Em nenhum</option>
+        </select>
+        <button type="submit">Confirmar presença</button>
+      </form>
+      <p id="respostaMensagem"></p>
+    </section>
+
+    <!-- Localização -->
+    <section class="localizacao">
+      <h2>📍 Localização</h2>
+      <p>Paróquia São Luís Gonzaga<br>Rua sete povos, 313 - marechal rondon - Canoas/rs</p>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.579606995515!2d-46.6559815!3d-23.5880109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c1e3a96ff7%3A0xf4c21c7d7f4b6d2f!2sPar%C3%B3quia%20S%C3%A3o%20Lu%C3%ADs%20Gonzaga!5e0!3m2!1spt-BR!2sbr!4v1696350000000"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="galeria">
+      <h2>📸 Galeria</h2>
+      <div class="fotos-galeria">
+        <img src="images/foto-helena.jpg" alt="Helena 1">
+        <img src="images/foto-helena2.jpg" alt="Helena 2">
+        <img src="images/foto-helena3.jpg" alt="Helena 3">
+      </div>
+    </section>
+
+    <footer>💖 Feito com amor para a Helena</footer>
+  </main>
+
+  <!-- Áudio -->
+  <audio id="openAudio" src="audio/porta.mp3" preload="auto"></audio>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
